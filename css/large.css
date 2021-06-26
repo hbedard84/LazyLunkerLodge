@@ -1,0 +1,14 @@
+/* CSS for large screens */
+
+/*2-column layout */
+
+section#s1, section#s2{
+  width: 40%;
+  float: left;
+}
+section#s2 {
+  margin-left: 5%;
+}
+footer {
+  clear: both;
+}

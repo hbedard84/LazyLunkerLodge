@@ -1,0 +1,16 @@
+/* CSS for medium screens */
+body{
+  padding: 2.5%;
+}
+
+footer{
+  clear:both;
+}
+
+img {
+  width:100%;
+}
+
+h2 {
+  width: 95%;
+}

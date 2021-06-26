@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lazy Lunker Contact</title>
+      <!-- Normalize CSS -->
+			<link href="css/normalize.css" rel="stylesheet" media="screen">
+      <!-- Reset the viewport -->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Link to main stylesheet -->
+			<link href="css/style.css" rel="stylesheet" media="screen">
+      <!-- Link element style sheet for smaller window sizes -->
+			<link href="css/small.css" rel="stylesheet" media="screen and (max-width: 480px)">
+      <!-- Link element to style sheet for medium window sizes -->
+			<link href="css/medium.css" rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 1024px)">
+      <!-- Link to style sheet for large window sizes -->
+			<link href="css/large.css" rel="stylesheet" media="screen and (min-width: 1025px)">
+			<link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+  </head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>Lazy Lunker Lodge</h1>
+				<nav>
+    			<ul>
+    				<li><a href="index.html" title="Go to the home page">Home</a></li>
+            <li><a href="accomodations.html" title="Go to the accomodations page">Accomodations</a>
+              <ul>
+                <li><a href="cabin1.html" title="Go to the cabin 1 section">Cozy Rustic Cabin</a></li>
+                <li><a href="cabin2.html" title="Go to the cabin 2 section">Large Family Cabin</a></li>
+                <li><a href="cabin3.html" title="Go to the cabin 3 section">Luxury Cabin</a></li>
+              </ul>
+            </li>
+            <li><a href="activities.html" title="Go to the activities page">Activities</a></li>
+    				<li><a href="reservations.html" title="Go to the reservations page">Reservations</a></li>
+    				<li><a href="contact.html" class="active" title="Go to the contact page">Contact</a></li>
+    			</ul>
+    		</nav>
+			</header>
+		</div>
+		<div class="under-header">
+			<img class="topimg" src="img/dockboat.png" alt="Boat and dock">
+			<h2>Contact Lazy Lunker Lodge</h2>
+		</div>
+		<section id="s1">
+			<h4>Contact Us</h4>
+			<div class="forms">
+				<form method="get" action="process-form-contact.php">
+        	<fieldset id="message-info">
+          	<legend>Contact Us</legend>
+						<p> To book a reservation, please use form on <a href="reservations.html" title="Go to the reservations page">Reservations</a> page</p>
+          	<div id="contact">
+              <div>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" required maxlength="50">
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" required maxlength="50">
+              </div>
+              <div>
+                <label for="phone">Phone Number (###-###-####)</label>
+                <input type="tel" name="phonenum" id="phonenum" placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}" required>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="yourname@example.com">
+              </div>
+							<div>
+								<p>Preferred method of contact?</p>
+		            <!-- Radio buttons for contact method, can only choose one -->
+		              <p>
+		                <input type="radio" name="contact-type" value="email" id="email">
+		                <label for="email">Email</label>
+		              </p>
+									<p>
+		                <input type="radio" name="contact-type" value="phone" id="phone">
+		                <label for="phone">Phone</label>
+		              </p>
+							</div>
+          	  <div>
+                <label for="msg">Your Message</label>
+  					    <textarea name="message-input" id="msg" placeholder="Type your message here" cols="75"></textarea>
+              </div>
+          	</div><!-- close contact div-->
+        	</fieldset>
+        	<button type="submit">Send Message Now</button>
+      	</form>
+			</div> <!--end of form div -->
+		</section> <!--end of s1 section -->
+		<section id="s2">
+			<div id="contactinfo">
+				<h3>Phone</h3>
+					<p>1-800-FISHING</p>
+					<p>(1-800-347-4464)</p>
+				<h3>Email</h3>
+					<p>lunkerlodge@fakeemail.com</p>
+				<h3>Address</h3>
+					<p>123 Lunker Lodge Rd<br>
+					WannaBeHere Lake, Ontario<br>
+					L0L 0L0<br>
+					</p>
+			</div>
+		</section>
+		<footer>
+			<p><small>This is an imaginary resort created as a course requirement for COMP1002. All information is <strong>fictional</strong>. &copy;2019 Holly Bedard Creations</small></p>
+		</footer>
+	</body>
+</html>

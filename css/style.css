@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+/* Remove margins, set body design */
+
+body {
+  margin: 0;
+  padding: 0;
+	font-family: 'Solway', serif;
+  color: #0A3409;
+  background-color: #D4F7D4;
+  overflow-x: hidden;
+}
+
+/* Heading styles */
+
+h1 {
+  color: #0A3409;
+  font-size: 4em;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(255,255,255,.7);
+}
+
+h2 {
+  font-size: 2em;
+  width:100%;
+  padding-left:7.5%;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  display: none;
+}
+
+/* Header Styling */
+
+header {
+  text-align: center;
+  background-image: url('../img/forest.png');
+  background-color: #559E54;
+  background-position:bottom;
+  background-size: contain;
+}
+
+@media (min-width: 475px) and (max-width:640px) {
+	header {
+		background-repeat: no-repeat;
+    background-size: cover;
+	}
+}
+
+/*Image styling */
+
+.topimg {
+  width:100%;
+  height: 175px;
+}
+
+
+.left {
+padding: 0 2.5% 2.5% 7.5%;
+  clear:both;
+  display: inline-block;
+  float: left;
+  width: 40%;
+
+}
+
+.right {
+  padding: 0 2.5% 2.5% 2.5%;
+  display: inline-block;
+  float: right;
+  width: 40%;
+}
+
+figure {
+  margin:2% 8%;
+}
+
+#placeholder{
+  width:100%;
+}
+
+/* Section Styling */
+
+#s1 {
+  padding: 0 2.5% 2.5% 7.5%;
+  display: inline-block;
+  float: left;
+  width: 40%;
+}
+
+#s2 {
+  padding: 2.5% 2.5% 2.5% 2.5%;
+  display: inline-block;
+  float: right;
+  width: 40%;
+}
+
+#s2 p {
+  padding-left: 5%;
+}
+
+#s2 h3 {
+  padding-left: 4%;
+}
+
+#reservation-form {
+  margin:0 10%;
+}
+
+#confirmation, #p1{
+  padding-left:7.5%;
+}
+
+
+/* Footer Styling */
+
+footer {
+  padding:0.25% 2% 0.25% 0%;
+  text-align: right;
+  background-color: #0A3409;
+  color: white;
+  margin-top: 15px;
+  bottom:0;
+  width: 98%;
+  clear:both;
+}
+
+/* Navigation styling */
+
+nav a {
+  display: block;
+  text-decoration: none;
+  background-color: #0A3409;
+  color: white;
+  font: 700 0.8em 'Solway', serif;
+  text-transform: uppercase;
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav * {
+  margin: 0;
+  padding: 0;
+  background-color: #0A3409;
+}
+
+/* Navigation Layout */
+
+li {
+  display: inline-block;
+  width: 160px;
+}
+
+li ul li {
+  display: block;
+}
+
+li ul {
+  position: absolute;
+  display: none;
+}
+
+li:hover ul {
+  display: block;
+}
+
+/* Interaction styling  */
+
+nav a:hover {
+  background-color: #559E54;
+  color: white;
+}
+
+nav a.active {
+  background-color: #559E54;
+  color: white;
+}
+
+/* Form styling - adapted from https://www.w3schools.com/howto/howto_css_contact_form.asp */
+legend {
+  text-align: center;
+  font-weight: bold;
+}
+/* Style inputs*/
+input[type=text], textarea, input[type=tel], input[type=email], input[type=date], select {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#activities {
+  padding: 0.5% 2% 2% 0;
+}
+/*Add white background behind the checkboxes to match the rest of form inputs style */
+#checkbox-container{
+  background-color: white;
+  padding: 1% 0% 1% 2%;
+}
+/* Style the send button */
+button {
+  background-color: #0A3409;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+
+/* When moving the mouse over the send button, add a lighter green colour */
+button:hover {
+  background-color: #559E54;
+}
+
+/* Add a background colour, borders and some padding/margin around the form */
+.forms {
+  border-color: #0A3409;
+  border-style: double;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 2.5%;
+}

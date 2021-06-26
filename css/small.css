@@ -1,0 +1,36 @@
+/* CSS for small screens */
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topimg {
+  display: none;
+}
+
+img {
+  width:100%;
+}
+
+h2 {
+  width:95%;
+}
+
+body {
+  clear:both;
+  padding:2.5%
+}
+
+#s1, #s2 {
+  width:95%;
+  padding: 2%;
+  clear: both;
+}
+
+#contactinfo{
+  text-align: center;
+}
+
+footer {
+  clear: both;
+}
